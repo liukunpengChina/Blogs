@@ -85,7 +85,7 @@ class LList {
         return currNode;
     }
 
-    removeAt(index) {
+    removeByIndex(index) {
         if (index < 0 || index >= this._length) {
             console.error('delete position beyond list');
             return null;
@@ -119,12 +119,34 @@ class LList {
         return currNode;
     }
 
+    removeByValue(value) {
+        let index = 0;
+        let currNode = this.head;
+        let deleteNode = null;
+        while(currNode && currNode.value !== value) {
+            currNode = currNode.next;
+            index += 1;
+        }
+        deleteNode = this.removeByIndex(index);
+        return deleteNode;
+    }
+
     find(val) {
         let currNode = this.head;
         while(currNode && currNode.value !== val) {
             currNode = currNode.next;
         }
         return currNode;
+    }
+
+    toArray() {
+        const result = [];
+        let currNode = this.head;
+        while (currNode) {
+            result.push(currNode.value);
+            currNode = currNode.next;
+        }
+        return result;
     }
 
     firstNode() {
@@ -147,3 +169,5 @@ class LList {
         }
     }
 }
+
+export default LList;
