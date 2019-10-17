@@ -24,12 +24,20 @@ class BinaryTreeNode {
         return Math.max(this.leftHeight, this.rightHeight);
     }
 
+    get balanceFactor() {
+        return this.leftHeight - this.rightHeight;
+    }
+
     setValue(newValue) {
         this.value = newValue;
         return this;
     }
 
     setLeft(node) {
+        if (!node) {
+            this.left = null;
+            return;
+        }
         if (!(node instanceof BinaryTreeNode)) {
             console.error('node must inherit from BinaryTreeNode');
             return;
