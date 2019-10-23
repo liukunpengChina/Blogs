@@ -20,6 +20,10 @@ class BinarySearchTree{
         return this.root.contains(value);
     }
 
+    find(value) {
+        return this.root.find(value);
+    }
+
     remove(value) {
         return this.root.remove(value);
     }

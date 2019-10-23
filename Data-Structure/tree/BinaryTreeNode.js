@@ -4,6 +4,7 @@ class BinaryTreeNode {
         this.left = null;
         this.right = null;
         this.parent = null;
+        this.meta = new Map();
     }
 
     get leftHeight() {

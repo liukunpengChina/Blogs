@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        import RedBlackTree from './RedBlackTree.js';
+
+        const rbtree = new RedBlackTree();
+
+        rbtree.insert(80);
+        rbtree.insert(30);
+        rbtree.insert(120);
+        rbtree.insert(10);
+        rbtree.insert(20);
+        rbtree.insert(5);
+        rbtree.insert(0);
+        rbtree.insert(8);
+
+        rbtree.traverse(rbtree.root);
+
+        console.log(rbtree.find(5));
+
+        window.rbtree = rbtree;
+    </script>
+</body>
+</html>
