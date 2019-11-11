@@ -57,8 +57,10 @@ Number 类型使用 **[IEEE 754](https://baike.baidu.com/item/IEEE%20754/3869922
 
 Number 类型的几个属性说明：
 
-+ `Number.MAX_VALUE`, `Number.MIN_VALUE`：ECMAScript能够表示的最大数值和最小数值，如果计算结果超出这个范围将会转换成 `Infinity` 和 `-Infinity`
-+ `Number.MAX_SAFE_INTEGER`, `Number.MIN_SAFE_INTEGER`：ECMAScript中最大的安全整数($2^{53} - 1$)和最小安全整数($-(2^{53} - 1)$)
++ `Number.MAX_VALUE`, `Number.MIN_VALUE`：ECMAScript能够表示的最大数值和最小数值，如果计算结果超出这个
+范围将会转换成 `Infinity` 和 `-Infinity`
++ `Number.MAX_SAFE_INTEGER`, `Number.MIN_SAFE_INTEGER`：ECMAScript中
+最大的安全整数($2^{53} - 1$)和最小安全整数($-(2^{53} - 1)$)
 
     > 安全整数：在 IEEE754 中能够安全的表示的整数，超过这个数值后会进行舍入操作
 
