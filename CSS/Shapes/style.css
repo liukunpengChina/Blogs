@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #FF6A00;
+}
+
+.rectangle {
+    width: 100px;
+    height: 50px;
+    background-color: #FF6A00;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FF6A00;
+}
+
+.ellipse {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px / 25px;
+    background-color: #FF6A00;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid #FF6A00;
+    border-right: 50px solid transparent;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid #FF6A00;
+    border-bottom: 50px solid transparent;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-top: 50px solid #FF6A00;
+    border-right: 50px solid transparent;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 50px solid #FF6A00;
+    border-bottom: 50px solid transparent;
+}
+
+.trapezoid {
+  width: 100px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #FF6A00;
+}
+
+.star-five {
+  width: 0;
+  height: 0;
+  margin: 50px 0;
+  position: relative;
+  border-left: 100px solid transparent;
+  border-bottom: 100px solid #FF6A00;
+  border-right: 100px solid transparent;
+}
