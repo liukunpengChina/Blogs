@@ -1,17 +1,16 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom';
-import * as serviceWorker from './serviceWorker';
-
+import './index.css';
 import React, { Component } from './lib/preact';
 import ReactDOM from './lib/preact-dom';
-
-import './index.css';
+import * as serviceWorker from './serviceWorker';
 
 const user = [
   { id: 0, name: 'LiLei', age: 20 },
   { id: 0, name: 'HanMeimei', age: 19 },
   { id: 0, name: 'Tom', age: 22 },
 ]
+
 
 // 函数组件
 function Comp(props) {
